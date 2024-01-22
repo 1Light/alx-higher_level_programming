@@ -2,7 +2,7 @@
 # 3-safe_print_division.py
 
 def safe_print_division(a, b):
-    """Returns the quotient of a \ b."""
+    """Returns the quotient of a / b."""
     try:
         div = a / b
     except (TypeError, ZeroDivisionError):
