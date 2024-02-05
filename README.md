@@ -1,1 +1,1 @@
-ALX Higher Level Programming Repository.
+This is the repository for ALX Higher Level Programming.
