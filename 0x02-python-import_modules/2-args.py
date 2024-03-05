@@ -9,5 +9,5 @@ if __name__ == "__main__":
         print("1 argument:")
     else:
         print("{} arguments:".format(num_args))
-    for i, j in enumerate(argv[1:], start = 1):
+    for i, j in enumerate(argv[1:], start=1):
         print("{}: {}".format(i, j))
