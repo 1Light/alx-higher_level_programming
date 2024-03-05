@@ -21,4 +21,4 @@ if __name__ == "__main__":
         exit(1)
 
     else:
-        print("{} {} {} {}".format(a, c, b, operators[c](a, b)))
+        print("{} {} {} = {}".format(a, c, b, operators[c](a, b)))
