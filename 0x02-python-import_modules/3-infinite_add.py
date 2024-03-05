@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-import sys
+# 3-infinite_add.py
 
 if __name__ == "__main__":
+    """Print the addition of all arguments."""
+    import sys
 
-    num_args = len(sys.argv) - 1
-    sum = 0
-
-    for _, j in enumerate(sys.argv[1:]):
-
-        sum += int(j)
-    print("{}".format(sum))
+    total = 0
+    for i in range(len(sys.argv) - 1):
+        total += int(sys.argv[i + 1])
+    print("{}".format(total))
