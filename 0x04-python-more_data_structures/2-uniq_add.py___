@@ -8,6 +8,9 @@ def uniq_add(my_list=[]):
     for num in my_list:
         unique_integers.add(num)
 
-    total = sum(unique_integers)
+    sum = 0
 
-    return total
+    for x in unique_integers:
+        sum += x
+
+    return sum
