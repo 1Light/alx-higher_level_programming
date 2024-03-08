@@ -3,17 +3,14 @@
 
 def uniq_add(my_list=[]):
 
-    unique_list = []
+    unique_integers = set()
 
-    for x in my_list:
-        if x in unique_list:
-            continue
-        else:
-            unique_list.append(x)
+    for num in my_list:
+        unique_integers.add(num)
 
     sum = 0
 
-    for y in unique_list:
-        sum += y
+    for x in unique_integers:
+        sum += x
 
     return sum
