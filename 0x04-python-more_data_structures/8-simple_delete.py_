@@ -1,7 +1,18 @@
 #!/usr/bin/python3
-# 8-simple_delete.py
+
 
 def simple_delete(a_dictionary, key=""):
-    if key in a_dictionary:
-        del a_dictionary[key]
-    return (a_dictionary)
+
+    new_dictionary = {}
+
+    for x in a_dictionary:
+        if x == key:
+            continue
+
+        else:
+            new_dictionary.update({x: a_dictionary[x]})
+
+    a_dictionary.clear()
+    a_dictionary.update(new_dictionary)
+
+    return a_dictionary
