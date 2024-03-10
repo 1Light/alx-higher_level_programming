@@ -10,7 +10,7 @@ def simple_delete(a_dictionary, key=""):
             continue
 
         else:
-            new_dictionary.update({x: a_dictionary[x]})
+            new_dictionary[x] = a_dictionary[x]
 
     a_dictionary.clear()
     a_dictionary.update(new_dictionary)
