@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-# 3-safe_print_division.py
+
 
 def safe_print_division(a, b):
-    """Returns the quotient of a / b."""
+
     try:
-        div = a / b
-    except (TypeError, ZeroDivisionError):
-        div = None
+        c = a / b
+
+    except ZeroDivisionError:
+        c = None
+
     finally:
-        print("Inside result: {}".format(div))
-    return (div)
+        print("Inside result: {}".format(c))
+        return c
