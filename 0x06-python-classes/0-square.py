@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+# 0-square.py
 
-""" This is a sample module implementation"""
+"""Define a class Square."""
 
 
 class Square:
-    """This is a sample class implementation"""
-
+    """Represent a square."""
     pass
