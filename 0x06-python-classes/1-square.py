@@ -1,12 +1,16 @@
 #!/usr/bin/python3
+# 1-square.py
 
-""" This is a script """
+"""Define a class Square."""
 
 
 class Square:
-    """This is a class"""
+    """Represent a square."""
 
     def __init__(self, size):
-        """This is a method"""
+        """Initialize a new Square.
 
+        Args:
+            size (int): Size of square.
+        """
         self.__size = size
