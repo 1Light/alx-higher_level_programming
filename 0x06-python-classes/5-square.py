@@ -9,11 +9,11 @@ class Square:
     def __init__(self, size=0):
         """This is a method"""
         self.__size = size
-    
+
     @property
     def size(self):
         return self.__size
-    
+
     @size.setter
     def size(self, value):
 
