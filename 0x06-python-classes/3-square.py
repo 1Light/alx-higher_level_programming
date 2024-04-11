@@ -2,6 +2,7 @@
 
 """ This is a script """
 
+
 class Square:
     """This is a class"""
 
