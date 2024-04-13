@@ -1,5 +1,12 @@
+#!/usr/bin/python3
+
+""" This is a script """
+
+
 class Square:
+    """This is a class"""
     def __init__(self, size=0, position=(0, 0)):
+        """This is a constructor"""
         self.size = size
         self.position = position
 
