@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-
-""" This is a script """
+# 0-rectangle.py
+"""This is a Rectangle class."""
 
 
 class Rectangle:
-    """This is a class"""
-
+    """This is a rectangle."""
     pass
