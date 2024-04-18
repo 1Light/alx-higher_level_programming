@@ -1,78 +1,72 @@
 #!/usr/bin/python3
-# 5-rectangle.py
-"""This is a Rectangle class."""
+
+""" This is a script """
 
 
 class Rectangle:
-    """This is a rectangle."""
+    """This is a class"""
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle.
+        """This is a constructor"""
 
-        Args:
-            width (int): Width of the rectangle.
-            height (int): Height of the rectangle.
-        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Get/set the width of the Rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if value < 0:
+
+        elif value < 0:
             raise ValueError("width must be >= 0")
+
         self.__width = value
 
     @property
     def height(self):
-        """Get/set the height of the Rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if value < 0:
+
+        elif value < 0:
             raise ValueError("height must be >= 0")
+
         self.__height = value
 
     def area(self):
-        """Return the area of the Rectangle."""
-        return (self.__width * self.__height)
+        return self.width * self.height
 
     def perimeter(self):
-        """Return the perimeter of the Rectangle."""
-        if self.__width == 0 or self.__height == 0:
-            return (0)
-        return ((self.__width * 2) + (self.__height * 2))
+        if self.width == 0 or self.height == 0:
+            return 0
+        else:
+            return 2 * (self.width + self.height)
 
     def __str__(self):
-        """Return the printable representation of the Rectangle.
+        if self.width == 0 or self.height == 0:
+            return ""
 
-        Represents the rectangle with the # character.
-        """
-        if self.__width == 0 or self.__height == 0:
-            return ("")
+        else:
+            my_list = ["#" * self.width] * self.height
+            return "\n".join(my_list)
 
-        rect = []
-        for i in range(self.__height):
-            [rect.append('#') for j in range(self.__width)]
-            if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+    def __print__(self):
+        if self.width == 0 or self.height == 0:
+            return ""
+
+        else:
+            my_list = ["#" * self.width] * self.height
+            return "\n".join(my_list)
 
     def __repr__(self):
-        """Return the string representation of the Rectangle."""
-        rect = "Rectangle(" + str(self.__width)
-        rect += ", " + str(self.__height) + ")"
-        return (rect)
+        return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
-        """Print a message for every deletion of a Rectangle."""
         print("Bye rectangle...")
